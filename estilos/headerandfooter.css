@@ -1,0 +1,151 @@
+@keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .header {
+    animation: slide-down 1s ease-in-out;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .footer {
+    animation: fade-in 1s ease-in-out;
+  }
+  .four-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas iguales */
+    gap: 10px; /* Espacio entre columnas */
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  #animacion {
+    animation: slideInRight 1s ease-in-out;
+  }@keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .header {
+    animation: slide-down 1s ease-in-out;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .footer {
+    animation: fade-in 1s ease-in-out;
+  }
+  .four-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Divide en 4 columnas iguales */
+    gap: 10px; /* Espacio entre columnas */
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  #animacion {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  /* Estilos para la imagen */
+  .gallery-image {
+    width: 100%;
+    max-height: 80vh; /* Limita la altura máxima para que las imágenes no sean demasiado grandes */
+    border: 3px solid #e0e0e0; /* Borde alrededor de la imagen */
+    transition: transform 0.3s, border 0.3s; /* Agrega una transición para transform y borde */
+  }
+  
+  /* Estilos para los botones de "Anterior" y "Siguiente" */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para las flechas de "Anterior" y "Siguiente" */
+  .arrow-left::before {
+    content: '\2190'; /* Flecha izquierda Unicode */
+    margin-right: 5px; /* Espacio entre la flecha y el texto */
+  }
+  
+  .arrow-right::after {
+    content: '\2192'; /* Flecha derecha Unicode */
+    margin-left: 5px; /* Espacio entre el texto y la flecha */
+  }
+  
+  /* Animación para las imágenes */
+  .gallery-image:hover {
+    transform: scale(1.05); /* Escala la imagen al hacer hover */
+    border: 3px solid #007bff; /* Cambia el color del borde al hacer hover */
+  }
+  
+  /* Animación para entrar y salir */
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s, transform 0.3s, border 0.3s;
+  }
+  
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+    transform: scale(0.95);
+    border: 3px solid transparent; /* Oculta el borde durante la transición */
+  }
+  .small-image {
+    max-width: 225px; /* Ajusta el valor según el tamaño que desees */
+    max-height: 500px; /* Ajusta el valor según el tamaño que desees */
+    display: block; /* Establece el elemento como bloque para poder centrarlo horizontalmente */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+    border: 1px solid black; /* Añade un borde negro de 1 píxel alrededor de la imagen */
+  }
+  
+  
